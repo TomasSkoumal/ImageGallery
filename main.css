@@ -1,0 +1,94 @@
+#bigPic{
+    position:relative;
+    height:328px;
+    width:540px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#bigPic .ig-image{
+    position:absolute;
+    display:none;
+    top:0;
+    left:0;
+    width:540px;
+    height:328px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#ig-images .ig-image a {
+    width:100%;
+    display:block;
+    height:100%;
+}
+
+.ig-thumbnails {
+    height:96px;
+    overflow: hidden;
+    padding-top:4px;
+    position:relative;
+}
+
+.ig-thumbnails-wrapper {
+    margin-left:0px;
+    width:540px;
+    overflow: hidden;
+}
+
+ul#ig-thumbs {
+    width:2200px;
+    margin:0 0 0 29px;
+    height:75px;
+    padding:0;
+}
+
+ul#ig-thumbs li.active{
+    background:#fff;
+    padding:0px;
+}
+
+ul#ig-, ul#ig-thumbs li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+ul#ig-thumbs li{
+    float:left;
+    margin-right:8px;
+    margin-bottom:0px;
+    padding:0px;
+    cursor:pointer;
+}
+
+ul#ig-thumbs img{
+    float:left;
+    width:auto;
+    height:75px;
+    line-height:100px;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+
+.arrow {
+    position: absolute;
+    z-index:100;
+    top:4px;
+    cursor: pointer;
+    height:75px;
+    width:54px;
+    display:block;
+    background:rgba(0,0,0,0.5) no-repeat center center;
+}
+
+.arrow.left {
+    left:0px;
+    background-image: url(arrow-left.png);
+}
+
+.arrow.right {
+    right:0px;
+    background-image: url(arrow-right.png);
+}

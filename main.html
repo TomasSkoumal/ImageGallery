@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+</head>
+<style href="main.css"></style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<body>
+
+<div class="gallery">
+    <div id="ig-images">
+        <!-- loop start -->
+        <div class="ig-image" style="background-image:url(medium-image.jpg);">
+            <a href="big-image.jpg" title="" class="lytebox" data-lyte-options="group:images"></a>
+        </div>
+        <!-- loop end -->
+    </div>
+
+    <div class="ig-thumbnails">
+        <div onclick="slideshowMove('+');" class="arrow left"></div>
+
+        <div class="ig-thumbnails-wrapper">
+            <ul id="ig-thumbs">
+                <!-- loop start -->
+                <li class="active" rel="1"><img src="thumbnail-image.jpg" alt="" title=""/></li>
+                <!-- loop end -->
+            </ul>
+        </div>
+        <div onclick="slideshowMove('-');" class="arrow right"></div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
